@@ -1,0 +1,26 @@
+{
+  "en-US": {
+    "title": "Your Result",
+    "textPercent": "of",
+    "grade": "Great",
+    "textButton": "Continue",
+    "scoredHigher": "You scored higher than 65% of the people who have taken these tests.",
+    "summary": "Summary",
+    "Reaction": "Reaction",
+    "Memory": "Memory",
+    "Verbal": "Verbal",
+    "Visual": "Visual"
+  },
+  "pt-BR": {
+    "title": "Seu Resultado",
+    "textPercent": "de",
+    "grade": "Ótimo",
+    "textButton": "Continuar",
+    "scoredHigher": "Você obteve uma pontuação maior do que 65% das pessoas que fizeram estes testes.",
+    "summary": "Resumo",
+    "Reaction": "Reação",
+    "Memory": "Memória",
+    "Verbal": "Verbal",
+    "Visual": "Visual"
+  }
+}
