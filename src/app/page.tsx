@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/select";
 
 import TranslateJson from "../../public/assets/translate/index.json";
-import DataSummary from "../../public/assets/mock/data.json";
+import dataSummaryJson from "../../public/assets/mock/data.json";
 import { useState } from "react";
 
 type TranslationKeys = {
@@ -31,7 +31,16 @@ type Translation = {
   "pt-BR": TranslationKeys;
 };
 
+type DataSummaryItem = {
+  category: keyof TranslationKeys;
+  score: number;
+  icon: string;
+  bg: string;
+  textColor: string;
+};
+
 export default function Home() {
+  const dataSummary: DataSummaryItem[] = dataSummaryJson as DataSummaryItem[];
   const [selectTranslate, setSelectTranslate] = useState<"en-US" | "pt-BR">(
     "en-US"
   );
@@ -80,7 +89,7 @@ export default function Home() {
                 </SelectContent>
               </Select>
             </div>
-            {DataSummary.map((item) => (
+            {dataSummary.map((item: DataSummaryItem) => (
               <section
                 key={item.category}
                 style={{ backgroundColor: item.bg }}
